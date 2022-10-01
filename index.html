@@ -33,24 +33,25 @@
           <h1>This is form.</h4>
           <div class="form-content">
             <div class="first-name">
-              <label for="first-name">FIRST NAME</label>
+              <label for="first-name">FIRST NAME<span style="color: red;">*</span></label>
               <br>
-              <input type="text" name="first-name" id="first-name">
+              <input type="text" name="first-name" id="first-name" maxlength="30" minlength="2" required>
             </div>
             <div class="email">
-              <label for="email">EMAIL</label>
+              <label for="email">EMAIL<span style="color: red;">*</span></label>
               <br>
-              <input type="email" name="email" id="email">
+              <input type="email" name="email" id="email" required placeholder="email@address.com">
             </div>
             <div class="password">
-              <label for="password">PASSWORD</label>
+              <label for="password">PASSWORD<span style="color: red;">*</span></label>
               <br>
-              <input type="password" name="password" id="password">
+              <input type="password" name="password" id="password"
+              pattern="^(?=.*\d)(?=.*[a-z])(?=.*[A-Z])(?!.*\s).*$" required>
             </div>
             <div class="last-name">
               <label for="last-name">LAST NAME</label>
               <br>
-              <input type="text" name="last-name" id="last-name">
+              <input type="text" name="last-name" id="last-name" minlength="2" maxlength="30">
             </div>
             <div class="phone-number">
               <label for="phone-number">PHONE NUMBER</label>
@@ -58,9 +59,10 @@
               <input type="tel" name="phone-number" id="phone-number">
             </div>
             <div class="confirm-password">
-              <label for="confirm-password">CONFIRM PASSWORD</label>
+              <label for="confirm-password">CONFIRM PASSWORD<span style="color: red;">*</span></label>
               <br>
-              <input type="password" name="confirm-password" id="confirm-password">
+              <input type="password" name="confirm-password" id="confirm-password" 
+              pattern="^(?=.*\d)(?=.*[a-z])(?=.*[A-Z])(?!.*\s).*$" required>
             </div>
           </div>
 

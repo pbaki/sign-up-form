@@ -62,7 +62,7 @@ form h1 {
 
 p#account {
   align-self: flex-start;
-  margin-left: 50px;
+  margin-left: 60px;
   margin-top: -20px;
 }
 
@@ -79,6 +79,11 @@ form label {
   font-size: larger;
 }
 
+form input:invalid {
+  border-color: red;
+}
+
+
 
 form button {
   appearance: none;
@@ -89,6 +94,10 @@ form button {
   font-size: x-large;
   font-weight: bold;
   border-radius: 10px;
+  border: 2px solid black;
   color: white;
   background-color: #4a6d2c;
+}
+form button:active {
+  background-color: #6c9e3f;
 }
