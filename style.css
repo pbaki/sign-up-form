@@ -1,7 +1,3 @@
-@font-face {
-  font-family: "Bungee Inline";
-  src: url(https://fonts.gstatic.com/s/bungeeinline/v11/Gg8zN58UcgnlCweMrih332VuPGp_-WEg.woff2);
-}
 body, html {
   font-family: 'Courier New', Courier, monospace;
   margin: 0;
@@ -26,8 +22,13 @@ body, html {
   width: 120px;
   height: 120px;
 }
-.left-side img, .left-side h1 {
+.left-side img {
   margin-top: 30%;
+}
+.left-side h1 {
+  font-family: 'OpenDyslexicAltaItalic', 'Courier New', Courier, monospace;
+  margin-top: calc(30% + 25px);
+  margin-bottom: 0;
 }
 
 .right-side {
@@ -45,6 +46,10 @@ body, html {
   flex-wrap: wrap;
   gap: 20px;
 }
+.form-content div {
+  flex-basis: 25%;
+}
+
 form button {
   margin: 40px 20px;
 }
